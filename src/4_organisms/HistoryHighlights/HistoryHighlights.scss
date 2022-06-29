@@ -1,0 +1,269 @@
+/* STANDARD CSS RULES */
+.historyHighlights {
+    background-color: $neutrals-200;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__p {
+        color: $neutrals-700;
+        margin-bottom: 50px;
+    }
+
+    &-tablet-desktop {
+        display: none;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .historyHighlights {
+        background-color: $neutrals-200;
+
+        &__p {
+            color: $neutrals-700;
+        }
+
+        &__header {
+            &__title {
+                color: $neutrals-900;
+            }
+        }
+
+        .content {
+            h4 {
+                color: $neutrals-900;
+            }
+
+            p {
+                color: $neutrals-700;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .historyHighlights {
+        background-color: $neutrals-800;
+
+        &__p {
+            color: $neutrals-500;
+        }
+
+        &__header {
+            &__title {
+                color: $neutrals-100;
+            }
+        }
+
+        .content {
+            h4 {
+                color: $neutrals-100;
+            }
+
+            p {
+                color: $neutrals-500;
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .historyHighlights {
+        &__title,
+        &__p {
+            padding: 0px 100px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .historyHighlights {
+        &-mobile {
+            display: none;
+        }
+
+        &-tablet-desktop {
+            display: block;
+        }
+
+        &__title {
+            margin-bottom: 75px;
+        }
+
+        &__header {
+            justify-content: center;
+            align-items: flex-start;
+            width: 723px;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 30px;
+
+            &__title {
+                width: 204px;
+            }
+
+            .historyHighlights__p {
+                width: 489px;
+                padding: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    /* ---TIMELINE TUTORIAL--- */
+    ul,
+    ol {
+        list-style-type: none;
+    }
+
+    .timeline {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        ul li {
+            position: relative;
+            width: 50%;
+
+            &:nth-child(odd) {
+                float: left;
+                text-align: right;
+                clear: both;
+            }
+
+            &:nth-child(even) {
+                float: right;
+                text-align: left;
+                clear: both;
+            }
+
+            &:nth-child(odd) .content {
+                margin-right: 100px;
+            }
+
+            &:nth-child(even) .content {
+                margin-left: 100px;
+            }
+
+            &:nth-child(odd)::before {
+                content: "";
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                background-color: $neutrals-100;
+                border-radius: 50%;
+                right: -79px;
+                top: 50%;
+                transform: translate(0%, -50%);
+                border: 4px solid $primary-600;
+            }
+
+            &:nth-child(even)::before {
+                content: "";
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                background-color: $neutrals-100;
+                border-radius: 50%;
+                left: -79px;
+                top: 50%;
+                transform: translate(0%, -50%);
+                border: 4px solid $primary-600;
+            }
+        }
+
+        ul::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        li {
+            &::before {
+                background-image: url("./max-verstappen-red-bull.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .content {
+                padding: 50px 0px;
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 76%;
+            width: 4px;
+            background-color: $primary-600;
+            left: 50%;
+            top: 12%;
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .historyHighlights {
+        &__title,
+        &__p {
+            padding: 0px;
+        }
+
+        &__p {
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .timeline {
+            ul li {
+                position: relative;
+                width: 50%;
+
+                &:nth-child(odd) .content {
+                    margin-right: 155px;
+                }
+
+                &:nth-child(even) .content {
+                    margin-left: 155px;
+                }
+
+                &:nth-child(odd)::before {
+                    height: 240px;
+                    width: 240px;
+                    right: -124px;
+                    border: 5px solid $primary-600;
+                }
+
+                &:nth-child(even)::before {
+                    height: 240px;
+                    width: 240px;
+                    left: -124px;
+                    border: 5px solid $primary-600;
+                }
+            }
+
+            li {
+                .content {
+                    padding: 100px 0px;
+                }
+            }
+        }
+    }
+}

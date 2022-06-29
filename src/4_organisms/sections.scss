@@ -1,0 +1,126 @@
+.section {
+    padding: 75px 20px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: $neutrals-900;
+    }
+
+    .cta__p {
+        margin-bottom: 10px;
+    }
+
+    .center {
+        margin-top: 50px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .section {
+        &__title {
+            color: $neutrals-900;
+        }
+
+        .cta__p {
+            color: $neutrals-900;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .section {
+        &__title {
+            color: $neutrals-100;
+        }
+
+        .cta__p {
+            color: $neutrals-100;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .section {
+        padding: 75px 50px;
+
+        &__title {
+            padding: 0px 100px;
+        }
+
+        .cta__p {
+            margin-bottom: 10px;
+            padding: 0px 100px;
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .section {
+        padding: 125px 120px;
+
+        &__title {
+            padding: 0px 250px;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .section {
+        &__title {
+            padding: 0;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta__p {
+            margin-bottom: 30px;
+        }
+
+        .center {
+            margin-top: 75px;
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .section {
+        padding: 125px 200px;
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .section {
+        padding: 125px 360px;
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .section {
+        padding: 125px 680px;
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .section {
+        padding: 125px 1120px;
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .section {
+        padding: 125px 1320px;
+    }
+}

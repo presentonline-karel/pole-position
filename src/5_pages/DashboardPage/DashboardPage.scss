@@ -1,0 +1,32 @@
+.dashboard {
+    flex: 1;
+    
+    .savedBlogposts {
+        .article {
+            .button {
+                background-color: $neutrals-900;
+            }
+        }
+        
+        .button {
+            background-color: $neutrals-800;
+        }
+    }
+
+    .standings-subnav {
+        display: none !important;
+    }
+
+    .breadcrumbs {
+        padding: 20px 20px 0px 20px;
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .dashboard {
+        .breadcrumbs {
+            padding: 50px 50px 0px 50px;
+        }
+    }
+}

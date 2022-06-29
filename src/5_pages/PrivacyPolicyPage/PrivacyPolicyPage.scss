@@ -1,0 +1,95 @@
+/* STANDARD CSS RULES */
+.privacyPolicy {
+    &__content {
+        padding: 50px 20px 75px 20px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    &__p {
+        margin-bottom: 50px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .privacyPolicy {
+        background-color: $neutrals-100;
+
+        &__p {
+            color: $neutrals-700;
+        }
+
+        &__subtitle {
+            color: $neutrals-900;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .privacyPolicy {
+        background-color: $neutrals-900;
+
+        &__p {
+            color: $neutrals-500;
+        }
+
+        &__subtitle {
+            color: $neutrals-100;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .privacyPolicy {
+        &__content {
+            padding: 50px 50px 75px 50px;
+        }
+
+        &__title {
+            padding: 0;
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .privacyPolicy {
+        &__content {
+            padding: 75px 0px 125px 0px;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .privacyPolicy {
+        &__content {
+            width: 794px;
+        }
+
+        &__title {
+            width: 794px;
+        }
+    }
+}

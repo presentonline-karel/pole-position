@@ -1,0 +1,41 @@
+.loading {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    &__screen {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        text-align: center;
+
+        &__img {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .loading {
+        background-color: $neutrals-100;
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .loading {
+        background-color: $neutrals-900;
+    }
+}

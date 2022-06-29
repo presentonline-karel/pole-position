@@ -1,0 +1,18 @@
+/*.payment {
+    flex: 1;
+    padding: 0;
+
+    .form__inputs-container {
+        margin-bottom: 30px;
+    }
+}
+
+/* DESKTOP 1440PX
+@media only screen and (min-width: $desktop-3) {
+    .payment {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 122px;
+    }
+} */

@@ -1,0 +1,116 @@
+.latestGP {
+    padding: 50px 20px;
+    margin: 0px 20px 75px 20px;
+    border-radius: 30px;
+    text-align: center;
+    filter: $card-shadow;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        margin-bottom: 30px;
+        color: $neutrals-900;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .latestGP {
+        background-color: $primary-100;
+
+        &__title {
+            color: $neutrals-900;
+        }
+
+        &__paragraph {
+            color: $neutrals-900;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .latestGP {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85)), url("./latest-gp-bg.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__title {
+            color: $neutrals-100;
+        }
+
+        &__paragraph {
+            color: $neutrals-100;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .latestGP {
+        padding: 50px 50px;
+        margin: 0px 150px 75px 150px;
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .latestGP {
+        &__paragraph {
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .latestGP {
+        margin-bottom: 125px;
+
+        &__title {
+            max-width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .latestGP {
+        margin: 0px 200px 125px 200px;
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .latestGP {
+        margin: 0px 360px 125px 360px;
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .latestGP {
+        margin: 0px 680px 125px 680px;
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .latestGP {
+        margin: 0px 1120px 125px 1120px;
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .latestGP {
+        margin: 0px 1320px 125px 1320px;
+    }
+}

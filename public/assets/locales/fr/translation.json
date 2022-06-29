@@ -1,0 +1,125 @@
+{
+  "app_title": "Pole Position | Le blog F1 pour les fans les plus passionnés",
+  "language": "Langue",
+  "welcome_message": "Bienvenue",
+  "days_since_release": "ça fait {{number_of_days}} jours depuis la sortie de cette vidéo",
+
+
+
+  "__": "NAV",
+  "nav_website_benefits_anchor": "Avantages",
+  "nav_website_pricing_anchor": "Tarification",
+  "nav_website_newsletter_anchor": "Bulletin",
+
+  "nav_website_login_anchor": "S'identifier",
+
+
+
+  "_________": "HEADER",
+  "header_intro": "Pole Position est l'endroit où vous trouverez toutes les dernières nouvelles F1. Êtes-vous un vrai passionné de F1? [Student thesis by Karel Decoene]",
+  "header_cta": "Rejoignez la communauté",
+
+
+
+  "___": "LATEST NEWS",
+  "latest_news_title": "Dernières nouvelles",
+  "latest_news_article": "Avantage possible pour Red Bull en seconde partie de saison",
+  "latest_news_cta": "Vous voulez connaître toutes les dernières actualités F1 ?",
+  "latest_news_cta_button": "Enregistre-moi",
+
+
+
+  "____": "BENEFITS",
+  "benefits_title": "Discutez du prochain GP de F1 en direct avec d'autres",
+  "benefits_introduction": "Êtes-vous à la recherche d'une véritable communauté F1 où vous pouvez trouver toutes les dernières informations liées à la F1 ?",
+
+  "benefits_item1_title": "Communauté",
+  "benefits_item1_p": "Rejoignez une communauté de vrais passionnés de F1. Eux seuls partageront votre niveau de passion.",
+
+  "benefits_item2_title": "L'actualité en temps réel",
+  "benefits_item2_p": "Ne vous fiez pas aux rumeurs, mais plutôt aux véritables informations en temps réel. Ne manquez plus jamais rien F1.",
+
+  "benefits_item3_title": "Discuter des nouvelles récentes",
+  "benefits_item3_p": "Rien ne va au-delà d'expliquer pourquoi une pénalité de temps était correcte pour un étranger sur Internet.",
+
+  "benefits_item4_title": "Commentez le GP en direct",
+  "benefits_item4_p": "Vous souhaitez partager votre émotion pendant le GP ? Nous vous voyons. Vous n'êtes pas le seul, rejoignez les autres maintenant.",
+
+  "benefits_cta_p": "Vous en avez assez entendu ?",
+  "benefits_cta_button": "Enregistre-moi",
+
+
+
+  "_____": "PLATFORM",
+  "platform_title": "Plateforme tout-en-un",
+  "platform_introduction": "C'est votre accès numéro un aux articles sur la F1, aux réseaux sociaux des pilotes et des équipes, à leur historique et plus encore.",
+
+  "platform_item1_title": "Accès 24h/7 aux dernières actualités",
+  "platform_item1_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het.",
+
+  "platform_item2_title": "Disponible sur tous les appareils",
+  "platform_item2_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het.",
+
+  "platform_item3_title": "Adaptez le thème à votre préférence",
+  "platform_item3_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het.",
+
+  "platform_item4_title": "Choisissez votre langue préférée",
+  "platform_item4_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het.",
+
+  "platform_cta_title": "$9/mois",
+  "platform_cta_p": "C'est pas cher aussi",
+  "platform_cta_button": "Enregistre-moi",
+
+
+
+  "______": "SIGN UP",
+  "signup_title": "Comment s'inscrire à ce blog génial?",
+  "signup_p": "Suivez ces étapes pour vous donner un accès rapide et facile à tout ce qui concerne la F1 ! Vous vous remercierez plus tard...",
+
+  "signup_step1_title": "Remplir l'e-mail",
+  "signup_step1_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een.",
+  
+  "signup_step2_title": "Créer un compte",
+  "signup_step2_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een.",
+
+  "signup_step3_title": "Login",
+  "signup_step3_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een.",
+
+  "signup_step4_title": "Paiement complet",
+  "signup_step4_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een.",
+
+  "signup_cta_button": "Enregistre-moi",
+
+
+
+  "_______": "NEWSLETTER",
+  "newsletter_title": "Assurez-vous de ne rien manquer avec notre newsletter",
+  "newsletter_p": "Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een.",
+
+  "newsletter_placeholder": "Your email here...",
+  "newsletter_button": "Enregistre-moi",
+
+
+
+  "________": "FOOTER",
+  "footer_sitemap_title": "Plan du site",
+  "footer_dashboard_anchor": "Tableau de bord",
+  "footer_blog_anchor": "Blog",
+  "footer_standings_anchor": "Classement",
+  "footer_gps_anchor": "Grand Prixs",
+  "footer_login_anchor": "Login",
+  "footer_register_anchor": "S'inscrire",
+
+  "footer_headoffice_title": "Siège social",
+
+  "footer_socials_title": "Sociaux",
+
+  "footer_contact_title": "Contact",
+
+  "footer_terms_title": "Conditions",
+  "footer_terms_anchor": "Termes et conditions",
+  "footer_privacy_anchor": "Politique de confidentialité",
+
+  "footer_copyright": "© 2022 Pole Position - Collaborateur F1",
+  "footer_backtotop": "Retour au sommet"
+}

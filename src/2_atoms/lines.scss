@@ -1,0 +1,13 @@
+.line {
+    border: none;
+    height: 1px;
+    width: 100%;
+}
+
+.line-dark {
+    background-color: $neutrals-800;
+}
+
+.line-light {
+    background-color: $neutrals-500;
+}

@@ -1,0 +1,69 @@
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .teamPage {
+        .moreRecentNews {
+            background-color: $neutrals-200;
+
+            .center {
+                .button {
+                    background-color: $neutrals-900;
+                }
+            }
+        }
+
+        .recentShots {
+            background-color: $neutrals-100;
+        }
+    
+        .mightAlsoLike {
+            background-color: $neutrals-200;
+
+            .driver-team {
+                background-color: $neutrals-100;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .teamPage {
+        .recentShots {
+            background-color: $neutrals-900;
+        }
+
+        .moreRecentNews {
+            background-color: $neutrals-800;
+
+            .article {
+                background-color: $neutrals-900;
+
+                .button {
+                    background-color: $neutrals-800;
+                }
+
+                .icon-bg {
+                    background-color: $neutrals-800;
+                }
+            }
+
+            .center {
+                .button {
+                    background-color: $neutrals-900;
+                }
+            }
+        }
+
+        .mightAlsoLike {
+            background-color: $neutrals-800;
+
+            .driver-team {
+                background-color: $neutrals-900;
+
+                .button {
+                    background-color: $neutrals-800;
+                }
+            }
+        }
+    }
+}

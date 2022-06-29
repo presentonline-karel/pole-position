@@ -1,0 +1,25 @@
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .blogPage {
+        .moreRecentNews {
+            .center {
+                .button {
+                    background-color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .blogPage {
+        .moreRecentNews {
+            .center {
+                .button {
+                    background-color: $neutrals-800;
+                }
+            }
+        }
+    }
+}

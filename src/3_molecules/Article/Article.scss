@@ -1,0 +1,128 @@
+.article {
+    border-radius: 20px;
+    height: 100%;
+    filter: $card-shadow;
+
+    &:hover {
+        cursor: pointer;
+        
+        .article__content {
+            div {
+                .article__img {
+                    img {
+                        transform: $zoom-small;
+                    }
+                }
+            }
+        }
+    }
+
+    &__img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: auto !important;
+        aspect-ratio: 3/2 !important;
+        overflow: hidden;
+
+        img {
+            transition: $transition-time-medium;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &__top {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 20px 20px 0px 20px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            padding: 0px 20px;
+        }
+
+        &__paragraph {
+            margin-bottom: 30px;
+            padding: 0px 20px;
+        }
+
+        &__bottom {
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 20px 20px;
+
+            a {
+                margin-bottom: 0 !important;
+            }
+
+            .button {
+                background-color: $neutrals-900;
+            }
+
+            .icon-bg {
+                background-color: $neutrals-900;
+
+                i {
+                    color: $neutrals-100;
+                }
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .article {
+        background-color: $neutrals-200;
+        border: 1px solid $neutrals-500;
+
+        &__content {
+            &__title {
+                color: $neutrals-900;
+            }
+
+            &__top {
+                .detail {
+                    color: $neutrals-900;
+                }
+            }
+
+            &__paragraph {
+                color: $neutrals-700;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .article {
+        background-color: $neutrals-800;
+
+        &__content {
+            &__top {
+                .detail {
+                    color: $neutrals-100;
+                }
+            }
+
+            &__title {
+                color: $neutrals-100;
+            }
+
+            &__paragraph {
+                color: $neutrals-500;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.latestnews {
+    &__articles {
+        a:first-child {
+            margin-bottom: 20px;
+        }
+
+        &__article {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3/2;
+            border-radius: 30px;
+            position: relative;
+            margin-bottom: 0 !important;
+
+            background-image: url(./max-verstappen-red-bull.jpeg);
+            background: linear-gradient(180deg, #9999a1 0%, rgba(0, 0, 0, 0.1) 100%), url(./max-verstappen-red-bull.jpeg) no-repeat;
+            background-size: cover;
+            filter: $card-shadow;
+            transition: $transition-time-short;
+
+            @supports not (aspect-ratio: 3/2) {
+                height: 209px;
+            }
+
+            &:hover {
+                filter: $card-shadow-hover;
+            }
+
+            h4 {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                text-align: left;
+                color: $neutrals-100;
+                width: calc(100% - 60px);
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .latestnews {
+        &__articles {
+            &__article {
+                h4 {
+                    font-size: 30px;
+                    line-height: 34px;
+                }
+
+                @supports not (aspect-ratio: 3/2) {
+                    height: 312px;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .latestnews {
+        &__articles {
+            .big-article {
+                margin-bottom: 0 !important;
+                margin-right: 30px;
+
+                @supports not (aspect-ratio: 3/2) {
+                    height: 337.5px;
+                }
+            }
+
+            &__smallones {
+                a:first-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 154px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .latestnews {
+        &__articles {
+            .big-article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 489px;
+                }
+            }
+
+            &__article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 230px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1366PX */
+@media only screen and (min-width: $desktop-2) {
+    .latestnews {
+        &__articles {
+            .big-article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 530px;
+                }
+            }
+
+            &__article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .latestnews {
+        &__articles {
+            .big-article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 566px;
+                }
+            }
+
+            &__article {
+                @supports not (aspect-ratio: 3/2) {
+                    height: 268px;
+                }
+            }
+        }
+    }
+}

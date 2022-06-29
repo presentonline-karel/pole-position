@@ -1,0 +1,86 @@
+/* STANDARD CSS RULES */
+.howsignup {
+    &__steps {
+        .step {
+            text-align: left;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            filter: $card-shadow;
+            transition: $transition-time-short;
+
+            &:hover {
+                filter: $card-shadow-hover;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &__title {
+                margin-bottom: 10px;
+            }
+
+            &__number {
+                font-family: $primary-font;
+                font-size: 75px;
+                font-weight: 500;
+                line-height: 59px;
+
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                color: $primary-600;
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .howsignup {
+        &__steps {
+            .step {
+                background-color: $neutrals-200;
+                border: 1px solid $neutrals-500;
+
+                &__title {
+                    color: $neutrals-900;
+                }
+
+                &__p {
+                    color: $neutrals-700;
+                }
+
+                &__number {
+                    opacity: 15%;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .howsignup {
+        &__steps {
+            .step {
+                background-color: $neutrals-800;
+
+                &__title {
+                    color: $neutrals-100;
+                }
+
+                &__p {
+                    color: $neutrals-500;
+                }
+
+                &__number {
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}

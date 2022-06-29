@@ -1,0 +1,256 @@
+.homePage {
+    .Navbar {
+        /* SLIDING NAV */
+        .nav-items {
+            /* SITEMAP */
+            .links {
+                &.nav-website {
+                    display: flex !important;
+                }
+
+                &.nav-webapp {
+                    display: none !important;
+                }
+            }
+
+            /* PROFILE + SIGNOUT BUTTON */
+            .bottom {
+                .button {
+                    &.nav-website {
+                        display: block !important;
+                    }
+
+                    &.nav-webapp {
+                        display: none !important;
+                    }
+                }
+            }
+
+            &.open {
+                .multilingual {
+                    display: block !important;
+                }
+
+                .top {
+                    width: calc(100% - 126px);
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .homePage {
+        .Navbar {
+            /* SLIDING NAV */
+            .nav-items {
+                &.open {
+                    .top {
+                        width: calc(100% - 186px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .homePage {
+        .Navbar {
+            .links-desktop {
+                &.nav-website {
+                    display: flex !important;
+                }
+
+                &.nav-webapp {
+                    display: none !important;
+                }
+            }
+
+            .nav-website {
+                display: block !important;
+            }
+
+            .nav-webapp {
+                display: none !important;
+            }
+        }
+
+        .multilingual {
+            display: block !important;
+        }
+    }
+
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 311px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 338px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 391px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 418px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 551px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 581px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 871px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 901px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 1311px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 1341px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    /* ENGLISH WEBSITE */
+    [lang="en"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 1511px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FRENCH WEBSITE */
+    [lang="fr"] {
+        .homePage {
+            .Navbar {
+                .toggle-container {
+                    &.desktop {
+                        right: 1541px;
+                    }
+                }
+            }
+        }
+    }
+}

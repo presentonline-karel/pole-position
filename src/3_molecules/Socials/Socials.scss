@@ -1,0 +1,34 @@
+.socials {
+    //gap: 7px;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+
+    //Simulate flex-gap
+    > * + * {
+        margin-left: 7px;
+    }
+
+    &__item {
+        background-color: $primary-600;
+        transition: all $transition-time-short;
+
+        &:hover {
+            border-radius: 5px !important;
+            transform: skew(-11deg);
+            background-color: $primary-500;
+
+            i {
+                transition: all $transition-time-short;
+                transform: skew(11deg);
+            }
+        }
+
+        i {
+            font-size: 20px;
+            line-height: 20px;
+            position: relative;
+            top: 15px;
+            color: $neutrals-100;
+        }
+    }
+}

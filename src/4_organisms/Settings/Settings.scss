@@ -1,0 +1,149 @@
+.settings {
+    padding-top: 50px;
+
+    &__group {
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 50px;
+        filter: $card-shadow;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        background-color: $neutrals-800;
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+
+        &__title,
+        &__subtitle {
+            color: $neutrals-100;
+        }
+    }
+
+    &__item {
+        padding: 20px;
+
+        &:last-of-type {
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .flex {
+            justify-content: space-between;
+            align-items: center;
+
+            .icon-bg-lg {
+                background-color: $primary-600;
+                border-radius: 50%;
+
+                i {
+                    color: $neutrals-100;
+                }
+            }
+        }
+
+        &__content {
+            &__title {
+                font-family: $primary-font;
+                font-weight: 600;
+                line-height: 16px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .settings {
+        &__item {
+            background-color: $neutrals-500;
+
+            &.item-grey {
+                background-color: $neutrals-200;
+            }
+
+            &__content {
+                &__title {
+                    color: $neutrals-900;
+                }
+
+                &__value {
+                    color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .settings {
+        &__item {
+            background-color: $neutrals-800;
+
+            &.item-grey {
+                background-color: #343A40;
+            }
+
+            &__content {
+                &__title {
+                    color: $neutrals-100;
+                }
+
+                &__value {
+                    color: $neutrals-500;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .settings {
+        &__item {
+            .flex {
+                height: 40px;
+            }
+
+            &__content {
+                display: flex;
+
+                &__title {
+                    margin-bottom: 0;
+                    width: 377px;
+                }
+
+                &__value {
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .settings {
+        padding-top: 75px;
+
+        &__group {
+            margin-bottom: 75px;
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .settings {
+        &__header {
+            padding: 30px;
+        }
+
+        &__item {
+            padding: 20px 30px;
+        }
+    }
+}

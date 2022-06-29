@@ -1,0 +1,192 @@
+.savedBlogposts {
+    padding-top: 50px;
+
+    &__articles {
+        a {
+            margin-bottom: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .welcome {
+        position: relative;
+
+        &__content {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .savedBlogposts {
+        .welcome {
+            background-color: $neutrals-200;
+
+            &__content {
+                &__title {
+                    color: $neutrals-900;
+                }
+
+                &__p {
+                    color: $neutrals-700;
+                }
+            }
+        }
+
+        .center {
+            .button {
+                background-color: $neutrals-900;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .savedBlogposts {
+        .welcome {
+            background-color: $neutrals-900;
+
+            &__content {
+                &__title {
+                    color: $neutrals-100;
+                }
+
+                &__p {
+                    color: $neutrals-500;
+                }
+            }
+        }
+
+        .center {
+            .button {
+                background-color: $neutrals-800;
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .savedBlogposts {
+        padding: 50px 150px 75px 150px;
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .savedBlogposts {
+        padding: 50px 50px 75px 50px;
+
+        &__articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            .article {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .savedBlogposts {
+        padding: 0;
+
+        .welcome {
+            width: 100%;
+            height: 240px;
+            text-align: center;
+        }
+
+        &__articles {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px 120px 0px 120px;
+
+            .article {
+                margin-bottom: 0;
+            }
+        }
+
+        .center {
+            margin-bottom: 75px;
+        }
+    }
+
+    /* LIGHT THEME COLORS */
+    [data-theme="light"] {
+        .savedBlogposts {
+            &__articles {
+                padding-top: 75px;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .savedBlogposts {
+        .welcome {
+            height: 340px;
+        }
+
+        .center {
+            margin-bottom: 125px;
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .savedBlogposts {
+        &__articles {
+            padding: 25px 200px 0px 200px;
+        }
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .savedBlogposts {
+        &__articles {
+            padding: 25px 360px 0px 360px;
+        }
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .savedBlogposts {
+        &__articles {
+            padding: 25px 680px 0px 680px;
+        }
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .savedBlogposts {
+        &__articles {
+            padding: 25px 1120px 0px 1120px;
+        }
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .savedBlogposts {
+        &__articles {
+            padding: 25px 1320px 0px 1320px;
+        }
+    }
+}

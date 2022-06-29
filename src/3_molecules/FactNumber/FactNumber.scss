@@ -1,0 +1,52 @@
+.factNumber {
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__icon-bg {
+        background-color: $primary-100;
+        margin-bottom: 10px;
+
+        i {
+            color: $primary-600;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .factNumber {
+        background-color: $neutrals-200;
+    
+        &__title {
+            color: $neutrals-900;
+        }
+
+        &__p {
+            color: $neutrals-700;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .factNumber {
+        background-color: $neutrals-800;
+    
+        &__title {
+            color: $neutrals-100;
+        }
+
+        &__p {
+            color: $neutrals-500;
+        }
+    }
+}

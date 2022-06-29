@@ -1,0 +1,218 @@
+.newsletter {
+    &__content {
+        border-radius: 20px;
+
+        &__img {
+            width: 100%;
+            height: 235px;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: 30px;
+        }
+
+        &__container {
+            padding: 0px 20px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__p {
+            margin-bottom: 30px;
+        }
+
+        .form {
+            width: 100%;
+            margin-bottom: 50px;
+
+            &__input {
+                width: 100%;
+                border-radius: 10px;
+
+                font-family: $secondary-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+
+                padding: 14px 20px;
+            }
+
+            .form-control-forms {
+                margin-bottom: 10px;
+                
+                .form-group {
+                    i {
+                        top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .newsletter {
+        background-color: $neutrals-200;
+
+        &__content {
+            background-color: $neutrals-100;
+
+            &__title {
+                color: $neutrals-900;
+            }
+
+            &__p {
+                color: $neutrals-700;
+            }
+
+            .form {
+                &__input {
+                    background-color: $neutrals-100;
+                    color: $neutrals-900;
+                }
+
+                .form-control-forms {
+                    .form-group {
+                        label {
+                            background-color: $neutrals-100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .newsletter {
+        background-color: $neutrals-800;
+
+        &__content {
+            background-color: $neutrals-900;
+
+            &__title {
+                color: $neutrals-100;
+            }
+
+            &__p {
+                color: $neutrals-500;
+            }
+
+            .form {
+                width: 100%;
+                margin-bottom: 50px;
+
+                &__input {
+                    background-color: $neutrals-900;
+                    color: $neutrals-100;
+                }
+
+                label {
+                    background-color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .newsletter {
+        padding: 75px 150px;
+
+        &__content {
+            &__img {
+                height: 309px;
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .newsletter {
+        padding: 75px 50px;
+
+        &__content {
+            position: relative;
+            height: 600px;
+            border-radius: 30px;
+
+            &__img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                border-radius: 0px 30px 30px 0px;
+                margin-bottom: 0;
+                object-position: -65px center;
+            }
+
+            &__container {
+                padding: 0;
+                transform: translate(0, -50%);
+                position: absolute;
+                width: calc(100% - 50% - 100px);
+                left: 50px;
+                top: 50%;
+
+                .socials {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .newsletter {
+        padding: 125px 120px;
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .newsletter {
+        padding: 125px 222px;
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .newsletter {
+        padding: 125px 302px;
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .newsletter {
+        padding: 125px 464px;
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .newsletter {
+        padding: 125px 782px;
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .newsletter {
+        padding: 125px 1222px;
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .newsletter {
+        padding: 125px 1422px;
+    }
+}

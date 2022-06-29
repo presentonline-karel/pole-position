@@ -1,0 +1,109 @@
+/* STANDARD CSS RULES */
+.howsignup {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__p {
+        margin-bottom: 50px;
+    }
+
+    &__steps {
+        margin-bottom: 50px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .howsignup {
+        background-color: $neutrals-100;
+    
+        &__p {
+            color: $neutrals-700;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .howsignup {
+        background-color: $neutrals-900;
+
+        &__title {
+            color: $neutrals-100;
+        }
+
+        &__p {
+            color: $neutrals-500;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .howsignup {
+        &__p {
+            padding: 0px 100px;
+        }
+
+        &__steps {
+            padding: 0px 100px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .howsignup {
+        &__p {
+            padding: 0px 250px;
+        }
+
+        &__steps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .step {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .howsignup {
+        &__p {
+            padding: 0px 250px;
+            margin-bottom: 75px;
+        }
+
+        &__steps {
+            padding: 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            gap: 0;
+
+            //Simulate flex-gap
+            > * + * {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .howsignup {
+        &__p {
+            padding: 0;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

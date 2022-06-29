@@ -1,0 +1,140 @@
+.standings {
+    flex: 1;
+    
+    &__drivers {
+        padding: 50px 20px 75px 20px;
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__line {
+            background-color: $neutrals-500;
+            margin: 50px 0px;
+        }
+    }
+
+    .standing-driver, .standing-team {
+        margin-bottom: 20px;
+        
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .dropdown-content {
+        display: none !important;
+
+        &-desktop {
+            display: none !important;
+        }
+
+        &.standings-subnav {
+            display: block !important;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .standings {
+        &__drivers {
+            padding: 50px 150px 75px 150px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .standings {
+        &__drivers {
+            padding: 50px 50px 75px 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px 30px;
+
+            a {
+                margin-bottom: 0;
+
+                &:nth-child(even) {
+                    margin-top: 30px;
+                }
+            }
+
+            &__line {
+                display: none;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .standings {
+        &__drivers {
+            padding: 75px 120px 125px 120px;
+        }
+
+        .dropdown-content {
+            &-desktop {
+                &.standings-subnav {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .standings {
+        &__drivers {
+            padding: 75px 200px 125px 200px;
+        }
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .standings {
+        &__drivers {
+            padding: 75px 360px 125px 360px;
+        }
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .standings {
+        &__drivers {
+            padding: 75px 680px 125px 680px;
+        }
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .standings {
+        &__drivers {
+            padding: 75px 1120px 125px 1120px;
+        }
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .standings {
+        &__drivers {
+            padding: 75px 1320px 125px 1320px;
+        }
+    }
+}

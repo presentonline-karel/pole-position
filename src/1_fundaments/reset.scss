@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container,
+body,
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    position: relative;
+    max-width: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $neutrals-100;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $neutrals-1000;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+.page-flex {
+    flex: 1;
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    body {
+        background-color: $neutrals-100;
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    body {
+        background-color: $neutrals-900;
+    }
+}

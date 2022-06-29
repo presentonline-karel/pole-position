@@ -1,0 +1,63 @@
+.detailHeader {
+    .top {
+        .top-team {
+            position: relative;
+            height: 160px;
+
+            &__img {
+                width: 80px;
+                height: 115px;
+                object-fit: cover;
+                object-position: top;
+                position: absolute;
+
+                &:first-of-type {
+                    top: 0;
+                    left: 0;
+                }
+
+                &:last-of-type {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .detailHeader {
+        .top {
+            height: 350px;
+
+            .top-team {
+                height: 100%;
+    
+                &__img {
+                    width: 160px;
+                    height: 230px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .detailHeader.detailHeader-team {
+        .top {
+            align-items: center;
+
+            &__info {
+                &__logos {
+                    &__team-logo {
+                        border: none;
+                        margin-bottom: 50px;
+
+                    }
+                }
+            }
+        }
+    }
+}

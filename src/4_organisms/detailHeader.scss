@@ -1,0 +1,317 @@
+/* STANDARD CSS RULES */
+.detailHeader {
+    padding: 20px 20px 75px 20px;
+
+    .breadcrumbs {
+        margin-bottom: 50px;
+    }
+
+    .top {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+
+        &__drivers {
+            width: 122px;
+
+            img {
+                border-radius: 0px 0px 20px 20px;
+            }
+        }
+
+        &__info {
+            max-width: calc(100% - 122px - 20px);
+
+            &__logos {
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                height: 30px;
+                margin-bottom: 20px;
+                width: 100%;
+
+                &__team-logo,
+                &__driver-logo {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+
+                &__team-logo {
+                    padding-right: 20px;
+                    width: 50px;
+                }
+            }
+
+            &__title {
+                margin-bottom: 20px;
+            }
+
+            .socials-mobile {
+                .socials {
+                    &__item {
+                        width: 40px;
+                        height: 40px;
+                        
+                        i {
+                            top: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .detailHeader {
+        .top {
+            &__info {
+                &__title {
+                    color: $neutrals-900;
+                }
+
+                &__driver-stats {
+                    &__item {
+                        &__title {
+                            color: $neutrals-900;
+                        }
+
+                        &__p {
+                            color: $neutrals-700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .detailHeader {
+        .top {
+            &__info {
+                &__title {
+                    color: $neutrals-100;
+                }
+
+                &__driver-stats {
+                    &__item {
+                        &__title {
+                            color: $neutrals-100;
+                        }
+
+                        &__p {
+                            color: $neutrals-500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .detailHeader {
+        padding: 50px 50px 75px 50px;
+
+        .top {
+            width: 100%;
+            justify-content: flex-start;
+
+            &__drivers {
+                width: 244px;
+                height: 350px;
+
+                img {
+                    border-radius: 0px 0px 30px 30px;
+                }
+            }
+
+            &__info {
+                width: calc(100% - 244px);
+
+                &__logos {
+                    height: 75px;
+
+                    &__team-logo,
+                    &__driver-logo {
+                        width: 75px;
+                        height: 75px;
+                    }
+
+                    &__team-logo {
+                        width: 95px;
+                    }
+                }
+
+                &__title {
+                    font-size: 50px;
+                    line-height: 54px;
+                }
+
+                .socials-mobile {
+                    .socials {
+                        &__item {
+                            width: 50px;
+                            height: 50px;
+                            
+                            i {
+                                top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .detailHeader {
+        .top {
+            &__info {
+                &__title {
+                    margin-bottom: 50px;
+                }
+
+                &__middle {
+                    display: flex !important;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .socials {
+                        padding-bottom: 0;
+                    }
+                }
+
+                &__driver-stats {
+                    display: flex !important;
+                    justify-content: flex-start;
+                    gap: 30px;
+
+                    &__item {
+                        &__title {
+                            text-transform: uppercase;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+
+                .socials-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .detailHeader {
+        padding: 125px 120px 125px 120px;
+
+        .top {
+            gap: 75px;
+            height: auto !important;
+
+            &__drivers {
+                width: 285px;
+                height: 499px;
+
+                &.top-team {
+                    width: 386px !important;
+                    height: 346px !important;
+
+                    img {
+                        width: 203px;
+                        height: 346px;
+                    }
+                }
+            }
+
+            &__info {
+                width: calc(100% - 285px - 75px);
+
+                &__logos {
+                    justify-content: flex-start;
+                    margin-bottom: 50px;
+
+                    &__team-logo,
+                    &__driver-logo {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    &__team-logo {
+                        width: 130px;
+                        padding-right: 30px;
+                        display: block;
+                    }
+
+                    &__driver-logo {
+                        margin-left: 30px;
+                    }
+                }
+
+                &__title {
+                    margin-bottom: 50px;
+                }
+
+                &__driver-stats {
+                    gap: 50px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .detailHeader {
+        padding: 125px 120px 125px 222px;
+
+        .top {
+            gap: 121px;
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .detailHeader {
+        padding: 125px 200px 125px 302px;
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .detailHeader {
+        padding: 125px 360px 125px 462px;
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .detailHeader {
+        padding: 125px 680px 125px 782px;
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .detailHeader {
+        padding: 125px 1120px 125px 1222px;
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .detailHeader {
+        padding: 125px 1320px 125px 1422px;
+    }
+}

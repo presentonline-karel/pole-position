@@ -1,0 +1,30 @@
+.dashboard {
+    .Navbar {
+        .links {
+            .dashboard-menu-item {
+                color: $primary-600;
+            }
+        }
+
+        .links-desktop {
+            .dashboard-menu-item {
+                color: $primary-600;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .dashboard {
+        .Navbar {
+            .links-desktop {
+                .dashboard-menu-item {
+                    i {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

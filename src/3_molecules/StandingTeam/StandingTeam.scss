@@ -1,0 +1,47 @@
+.standing-team {
+    &__driver {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+
+        &.driver1 {
+            right: 70px;
+        }
+
+        &.driver2 {
+            right: 20px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .standing-team {
+        &__driver {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+    
+            &.driver1 {
+                right: 90px;
+            }
+    
+            &.driver2 {
+                right: 20px;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .standing-team {
+        .standing__number {
+            right: 215px;
+        }
+    }
+}

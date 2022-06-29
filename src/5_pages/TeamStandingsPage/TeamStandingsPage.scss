@@ -1,0 +1,30 @@
+.standings {
+    .Navbar {
+        .links {
+            .standings-menu-item {
+                color: $primary-600;
+            }
+        }
+
+        .links-desktop {
+            .standings-menu-item {
+                color: $primary-600;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .standings {
+        .Navbar {
+            .links-desktop {
+                .standings-menu-item {
+                    i {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

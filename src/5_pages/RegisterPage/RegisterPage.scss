@@ -1,0 +1,229 @@
+/* .register {
+    flex: 1;
+    padding: 0px;
+
+    &__flexbox {
+        padding: 50px 20px 75px 20px;
+    }
+
+    .form__inputs-container {
+        margin-bottom: 15px;
+
+        .form__line {
+            background-color: $neutrals-500;
+            margin: 50px 0px;
+        }
+    }
+
+    &__form {
+        &__checkbox {
+            margin-bottom: 50px !important;
+
+            .checkbox-label {
+                font-family: $secondary-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-left: 8px;
+                padding-top: 16px;
+            }
+        }
+
+        .custom-form__no-acc {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__img {
+        display: none;
+    }
+}
+
+/* LIGHT THEME COLORS
+[data-theme="light"] {
+    .register {
+        &__form {
+            &__checkbox {
+                .checkbox-label {
+                    color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS
+[data-theme="dark"] {
+    .register {
+        &__form {
+            &__checkbox {
+                .checkbox-label {
+                    color: $neutrals-500;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT
+@media only screen and (min-width: $tablet-portrait) {
+    .register {
+        &__flexbox {
+            padding: 50px 50px 75px 50px;
+        }
+
+        .form__inputs-container {
+            margin-bottom: 15px;
+
+            .form__line {
+                background-color: $neutrals-500;
+                margin: 50px 0px;
+            }
+        }
+
+        &__form {
+            &__checkbox {
+                margin-bottom: 50px !important;
+                padding-top: 16px;
+
+                .checkbox-label {
+                    font-family: $secondary-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-left: 8px;
+                    padding-top: 0px;
+                }
+            }
+
+            .custom-form__no-acc {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX
+@media only screen and (min-width: $desktop-1) {
+    .register {
+        &__flexbox {
+            padding: 75px 120px 125px 120px;
+            width: 50%;
+        }
+    }
+}
+
+/* DESKTOP 1440PX
+@media only screen and (min-width: $desktop-3) {
+    .register {
+        &__flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 122px;
+            width: 100%;
+            //padding: section padding;
+        }
+
+        &__content {
+            width: calc(100% - 488px - 122px);
+        }
+
+        &__img {
+            display: block;
+            width: 488px;
+            height: 498px;
+            object-fit: cover;
+            border-radius: 30px;
+            object-position: 0 center;
+        }
+    }
+} */
+
+.register {
+    .form__inputs-container {
+        margin-bottom: 0px;
+
+        .form__line {
+            margin: 50px 0px;
+        }
+    }
+
+    &__form {
+        &__checkbox {
+            margin-bottom: 30px !important;
+
+            .checkbox-label {
+                font-family: $secondary-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-left: 8px;
+                padding-top: 16px;
+            }
+        }
+
+        .privacy-policy-agree {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .register {
+        .form__inputs-container {
+            .form__line {
+                background-color: $neutrals-500;
+            }
+        }
+
+        &__form {
+            &__checkbox {
+                .checkbox-label {
+                    color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .register {
+        .form__inputs-container {
+            .form__line {
+                background-color: $neutrals-100;
+                opacity: 0.25;
+            }
+        }
+
+        &__form {
+            &__line {
+                background-color: $neutrals-100;
+                opacity: 0.25;
+            }
+
+            &__checkbox {
+                .checkbox-label {
+                    color: $neutrals-500;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .register {
+        &__form {
+            &__checkbox {
+                padding-top: 16px;
+
+                .checkbox-label {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+}

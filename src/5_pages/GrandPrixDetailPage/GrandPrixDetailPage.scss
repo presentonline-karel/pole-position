@@ -1,0 +1,406 @@
+.grandprixDetail {
+    .banner {
+        width: 100%;
+        height: 214px;
+
+        &__bg {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__info {
+            height: 64px;
+            position: relative;
+
+            &__circuit {
+                position: absolute;
+                top: -50px;
+                left: 20px;
+                width: 100px;
+                height: 100px;
+
+                border-radius: 50%;
+                text-align: center;
+                background-color: $neutrals-500;
+
+                &__img {
+                    width: 75px;
+                    position: relative;
+                    transform: translate(-60%, -50%);
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+
+            &__title {
+                display: none;
+            }
+
+            .button {
+                position: absolute;
+                transform: skew(-11deg) translate(0, -50%);
+                top: 50%;
+                right: 20px;
+
+                i {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    &__articles {
+        padding-top: 20px;
+
+        .breadcrumbs {
+            margin-bottom: 50px;
+        }
+
+        a {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .grandprixDetail {
+        .banner {
+            background-color: $neutrals-200;
+
+            &__info {
+                &__circuit {
+                    border: 4px solid $neutrals-200;
+                }
+
+                &__title {
+                    color: $neutrals-900;
+                }
+            }
+        }
+
+        &__articles {
+            .center {
+                .button {
+                    background-color: $neutrals-900;
+                }
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .grandprixDetail {
+        .banner {
+            background-color: $neutrals-800;
+
+            &__info {
+                &__circuit {
+                    border: 4px solid $neutrals-800;
+                }
+
+                &__title {
+                    color: $neutrals-100;
+                }
+            }
+        }
+
+        &__articles {
+            .center {
+                .button {
+                    background-color: $neutrals-800;
+                }
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .grandprixDetail {
+        .banner {
+            height: 364px;
+
+            &__bg {
+                height: 280px;
+            }
+
+            &__info {
+                height: 84px;
+
+                &__circuit {
+                    left: 50px;
+                    width: 150px;
+                    height: 150px;
+                    top: -85px;
+
+                    &__img {
+                        width: 120px;
+                        position: relative;
+                        transform: translate(-60%, -50%);
+                        top: 50%;
+                        left: 50%;
+                    }
+                }
+
+                &__title {
+                    display: block;
+                    text-align: center;
+                    padding-top: 25px;
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+
+                .button {
+                    right: 50px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 50px 150px 75px 150px;
+
+            .section__title {
+                display: none;
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .grandprixDetail {
+        .banner {
+            &__bg {
+                height: 264px;
+                background-position: center;
+            }
+
+            &__info {
+                height: 100px;
+
+                &__circuit {
+                    width: 200px;
+                    height: 200px;
+                    top: -125px;
+                    border-width: 6px !important;
+
+                    &__img {
+                        transform: translate(-65%, -50%);
+                        width: 150px;
+                    }
+                }
+
+                &__title {
+                    padding-top: 33px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 75px 50px;
+
+            .section__title {
+                display: none;
+            }
+
+            &__articles {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+
+                .article {
+                    margin-bottom: 0;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .grandprixDetail {
+        .banner {
+            height: 500px;
+
+            &__bg {
+                height: 350px;
+                background-position: center 90%;
+            }
+
+            &__info {
+                height: 150px;
+
+                &__circuit {
+                    top: -100px;
+                    left: 120px;
+                    border-width: 6px !important;
+                }
+
+                &__title {
+                    padding-top: 58px;
+                }
+
+                .button {
+                    right: 120px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 75px 120px 125px 120px;
+
+            .breadcrumbs {
+                margin-bottom: 75px;
+            }
+
+            .section__title {
+                display: none;
+            }
+
+            &__articles {
+                grid-template-columns: repeat(3, 1fr);
+
+                .article {
+                    margin-bottom: 0;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__title {
+                    padding-top: 48px;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP 1600PX */
+@media only screen and (min-width: $desktop-5) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__circuit {
+                    left: 200px;
+                }
+
+                .button {
+                    right: 200px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 125px 200px;
+        }
+    }
+}
+
+/* DESKTOP 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__circuit {
+                    left: 360px;
+                }
+
+                .button {
+                    right: 360px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 125px 360px;
+        }
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__circuit {
+                    left: 680px;
+                }
+
+                .button {
+                    right: 680px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 125px 680px;
+        }
+    }
+}
+
+/* DESKTOP 3440PX */
+@media only screen and (min-width: $desktop-wqhd) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__circuit {
+                    left: 1120px;
+                }
+
+                .button {
+                    right: 1120px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 125px 1120px;
+        }
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .grandprixDetail {
+        .banner {
+            &__info {
+                &__circuit {
+                    left: 1320px;
+                }
+
+                .button {
+                    right: 1320px;
+                }
+            }
+        }
+
+        &__articles {
+            padding: 125px 1320px;
+        }
+    }
+}

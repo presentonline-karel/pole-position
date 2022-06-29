@@ -1,0 +1,98 @@
+/* SPECIAL LABEL ANIMATION ON INPUTS */
+.form {
+    &__inputs-container {
+        .form-group {
+            position: relative;
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__input {
+        font-family: $secondary-font;
+        font-size: 16px;
+        width: 100%;
+        height: 55px;
+        border-radius: 15px;
+        outline: none;
+        padding: 30px;
+
+        &:hover {
+            border-color: $primary-600;
+        }
+    }
+
+    &__label {
+        font-family: $secondary-font;
+        font-size: 16px;
+        line-height: 20px;
+        position: absolute;
+        left: 1rem;
+        top: 0.8rem;
+        padding: 0 0.5rem;
+        cursor: text;
+        transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    }
+}
+
+/* 1. When the input is in the focus state reduce the size of the label and move upwards */
+.form__input:focus ~ .form__label {
+    color: $primary-600;
+}
+
+/* 2. Keep label state when content is in input field */
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .form {
+        &__input {
+            border: 1px solid $neutrals-600;
+            color: $neutrals-900;
+            background-color: $neutrals-100;
+
+            &:focus {
+                border-color: $primary-600;
+            }
+        }
+    
+        &__label {
+            color: $neutrals-700;
+            background-color: $neutrals-100;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .form {
+        &__input {
+            border: 1px solid $neutrals-600;
+            color: $neutrals-100;
+            background-color: $neutrals-900;
+
+            &:focus {
+                border-color: $primary-600;
+            }
+        }
+
+        &__label {
+            color: $neutrals-500;
+            background-color: $neutrals-900;
+        }
+    }
+
+    .custom-form {
+        &__disclaimer {
+            color: $neutrals-500;
+        }
+    }
+}

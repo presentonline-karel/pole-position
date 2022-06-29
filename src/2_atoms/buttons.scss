@@ -1,0 +1,52 @@
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    border: none;
+    color: $neutrals-100;
+
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.button-primary {
+        background-color: $primary-600;
+    }
+
+    &.button-tertiary,
+    &.button-secondary {
+        background-color: $neutrals-900;
+    }
+
+    &.edit {
+        border-radius: 50%;
+    }
+
+    /* SKEWED BUTTONS */
+    &.skew {
+        border-radius: 0;
+        transform: skew(-11deg);
+        text-align: center;
+        outline: 0;
+        border-radius: $border-radius-x-small;
+
+        /* Un-skew the text */
+        & > span {
+            display: inline-block;
+            transform: skew(11deg);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.login {
+    &__line {
+        margin: 20px 0px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .login {
+        &__line {
+            background-color: $neutrals-500;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .login {
+        &__line {
+            background-color: $neutrals-100;
+            opacity: 0.25;
+        }
+    }
+}

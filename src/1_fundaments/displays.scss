@@ -1,0 +1,55 @@
+.tablet-landscape {
+    display: none;
+}
+
+.desktop {
+    display: none !important;
+}
+
+.light {
+    display: block;
+}
+
+.dark {
+    display: none;
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .light {
+        display: block;
+    }
+    
+    .dark {
+        display: none;
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .light {
+        display: none;
+    }
+    
+    .dark {
+        display: block;
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .tablet-landscape {
+        display: block;
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .mobile {
+        display: none !important;
+    }
+    
+    .desktop {
+        display: block !important;
+    }
+}

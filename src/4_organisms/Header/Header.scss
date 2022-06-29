@@ -1,0 +1,337 @@
+/* STANDARD CSS RULES */
+.header {
+    position: relative;
+    height: calc(100vh - 66px);
+    padding: 0px 20px;
+    text-align: center;
+    z-index: 0;
+
+    .bg-rect {
+        position: absolute;
+        z-index: 0;
+
+        &.bg-rect1 {
+            top: -20%;
+            right: -55%;
+        }
+
+        &.bg-rect2 {
+            bottom: -70px;
+            left: -80%;
+        }
+    }
+
+    &__container {
+        position: absolute;
+        top: calc(50% - 33px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100vw - 40px);
+        height: auto;
+        z-index: 1;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+        width: 262px;
+        height: 40px;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__p {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        margin-bottom: 50px;
+    }
+
+    &__img-placeholder {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 7/5;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+
+        &.tablet {
+            display: none;
+        }
+    }
+
+    &__scrolldown {
+        position: absolute;
+        bottom: 20px;
+
+        &__icon {
+            font-size: 16px;
+            line-height: 24px;
+            animation: bounce 1.2s linear infinite;
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+            animation-timing-function: ease-out;
+        }
+    
+        50% {
+                transform: translateY(-20px);
+                animation-timing-function: ease-in; 
+        }
+        100% {
+            transform: translateY(0);
+            animation-timing-function: ease-out; 
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .header {
+        background-color: $neutrals-100;
+
+        &__p {
+            color: $neutrals-900;
+        }
+
+        &__scrolldown {
+            &__icon {
+                color: $neutrals-900;
+            }
+        }
+
+        &__img-placeholder {
+            &.dark {
+                display: none !important;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .header {
+        background-color: $neutrals-900;
+
+        &__p {
+            color: $neutrals-100;
+        }
+
+        &__scrolldown {
+            &__icon {
+                color: $neutrals-100;
+            }
+        }
+
+        &__img-placeholder {
+            &.light {
+                display: none !important;
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .header {
+        height: calc(100vh - 66px);
+
+        .bg-rect {
+            &.bg-rect2 {
+                bottom: -15%;
+                left: -70%;
+            }
+        }
+
+        &__container {
+            top: calc(50% - 40px);
+            width: calc(100vw - 100px);
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+            width: 406px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        &__p {
+            padding: 0px 100px 20px 100px;
+        }
+
+        .button {
+            margin-bottom: 75px;
+        }
+
+        &__img-placeholder {
+            &.mobile {
+                display: none;
+            }
+
+            &.tablet {
+                display: block;
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .header {
+        .bg-rect {
+            &.bg-rect1 {
+                top: -40%;
+                right: -30%;
+            }
+
+            &.bg-rect2 {
+                bottom: -50%;
+                left: -50%;
+            }
+        }
+
+        &__p {
+            padding: 0px 250px 20px 250px;
+        }
+
+        .button {
+            margin-bottom: 50px;
+        }
+
+        &__img-placeholder {
+            width: 424px;
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .header {
+        height: calc(100vh - 100px);
+
+        .bg-rect {
+            &.bg-rect1 {
+                top: -30%;
+                right: -20%;
+            }
+
+            &.bg-rect2 {
+                bottom: -40%;
+                left: -40%;
+            }
+        }
+
+        &__img-placeholder {
+            width: 335px;
+        }
+
+        &__p {
+            padding: 0px 350px 20px 350px;
+        }
+
+        &__img-placeholder {
+            &.tablet {
+                display: none;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX x 900PX */
+@media only screen and (min-width: $desktop-1) and (min-height: 900px) {
+    .header {
+        &__logo {
+            width: 576px;
+            height: 89px;
+        }
+
+        .button {
+            margin-bottom: 50px;
+        }
+
+        &__img-placeholder {
+            width: 500px;
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .header {
+        height: calc(100vh - 100px);
+
+        .bg-rect {
+            &.bg-rect1 {
+                top: -35%;
+                right: -15%;
+            }
+
+            &.bg-rect2 {
+                bottom: 0%;
+                left: -15%;
+            }
+        }
+
+        &__p {
+            padding: 0;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__img-placeholder {
+            width: 589px;
+        }
+    }
+}
+
+/* DESKTOP 1536PX */
+@media only screen and (min-width: $desktop-4) {
+    .header {
+        &__img-placeholder {
+            width: 335px;
+        }
+    }
+}
+
+/* DESKTOP 1536PX and MIN-HEIGHT 900PX */
+@media only screen and (min-width: $desktop-4) and (min-height: 900px) {
+    .header {
+        &__img-placeholder {
+            width: 500px;
+        }
+    }
+}
+
+/* DESKTOP 1536PX and MIN-HEIGHT 1024PX */
+@media only screen and (min-width: $desktop-4) and (min-height: 900px) {
+    .header {
+        &__img-placeholder {
+            width: 589px;
+        }
+    }
+}
+
+/* DESKTOP 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .header {
+        &__img-placeholder {
+            width: 794px;
+        }
+    }
+}
+
+/* DESKTOP 3840PX */
+@media only screen and (min-width: $desktop-4k) {
+    .header {
+        &__img-placeholder {
+            width: 1200px;
+        }
+    }
+}

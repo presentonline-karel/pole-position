@@ -1,0 +1,8 @@
+/* DESKTOP HD */
+@media only screen and (min-width: $desktop-hd) {
+    .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}

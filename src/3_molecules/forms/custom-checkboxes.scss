@@ -1,0 +1,124 @@
+/* CUSTOM CHECKBOX */
+.input-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    bottom: 10px;
+
+    .newsletterCheckbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            border: none;
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+
+    &:hover input ~ .checkmark {
+        transition: 0.15s ease;
+        background-color: $neutrals-100;
+    }
+
+    .checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 3px;
+        height: 6px;
+        border: solid $neutrals-100;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .input-container {
+        .newsletterCheckbox {
+            &:checked ~ .checkmark {
+                background-color: $primary-600;
+            }
+        }
+
+        .checkmark {
+            background-color: $neutrals-100;
+            border: 1px solid $neutrals-900;
+        }
+
+        &:hover input ~ .checkmark {
+            background-color: $neutrals-100;
+        }
+
+        .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 3px;
+            height: 6px;
+            border: solid $neutrals-100;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .input-container {
+        .newsletterCheckbox {
+            &:checked ~ .checkmark {
+                background-color: $primary-600;
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: $neutrals-900;
+            border: 1px solid $neutrals-500;
+            border-radius: 5px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+
+        &:hover input ~ .checkmark {
+            background-color: $neutrals-900;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.form-group {
+    position: relative;
+
+    i {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        visibility: hidden;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+
+        &.fa-check-circle {
+            font-size: 18px;
+        }
+    }
+
+    &.success {
+        .input {
+            border-color: $success-500 !important;
+        }
+
+        i.fa-check-circle {
+            visibility: visible;
+            color: $success-500;
+        }
+    }
+
+    &.error {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+
+        .input {
+            border-color: $primary-600 !important;
+        }
+
+        i.fa-exclamation-triangle {
+            visibility: visible;
+            color: $primary-600;
+        }
+
+        small {
+            color: $primary-600;
+            visibility: visible;
+        }
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 3px !important;
+    }
+
+    small {
+        font-family: $primary-font;
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+}

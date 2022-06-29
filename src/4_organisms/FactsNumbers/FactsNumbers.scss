@@ -1,0 +1,39 @@
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .factsNumbers {
+        &__items {
+            padding: 0px 100px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .factsNumbers {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .factNumber {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .factsNumbers {
+        &__items {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .factNumber {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

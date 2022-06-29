@@ -1,0 +1,77 @@
+/* STANDARD CSS RULES - LOGIN, REGISTER + PAYMENT FORMS */
+.custom-form {
+    .form {
+        &__inputs-container {
+            margin-bottom: 10px;
+
+            .form-control-forms {
+                margin-bottom: 15px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__disclaimer {
+        margin-bottom: 50px;
+    }
+
+    .flex {
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__forgot-pw {
+        text-decoration: underline;
+        margin-bottom: 0 !important;
+    }
+
+    &__no-acc {
+        margin-bottom: 0 !important;
+
+        &__link {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .custom-form {
+        &__disclaimer {
+            color: $neutrals-700;
+        }
+    
+        &__forgot-pw {
+            color: $neutrals-700;
+        }
+
+        &__no-acc {
+            &__link {
+                color: $neutrals-900;
+            }
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .custom-form {
+        &__disclaimer {
+            color: $neutrals-500;
+        }
+    
+        &__forgot-pw {
+            color: $neutrals-500;
+        }
+
+        &__no-acc {
+            &__link {
+                color: $neutrals-500;
+            }
+        }
+    }
+}

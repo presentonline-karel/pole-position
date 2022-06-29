@@ -1,0 +1,110 @@
+.benefits {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__p {
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        margin-bottom: 50px;
+    }
+}
+
+/* LIGHT THEME COLORS */
+[data-theme="light"] {
+    .benefits {
+        background-color: $neutrals-100;
+
+        &__p {
+            color: $neutrals-700;
+        }
+    }
+}
+
+/* DARK THEME COLORS */
+[data-theme="dark"] {
+    .benefits {
+        background-color: $neutrals-900;
+
+        &__p {
+            color: $neutrals-500;
+        }
+    }
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-width: $tablet-portrait) {
+    .benefits {
+        &__p {
+            padding: 0px 100px;
+        }
+
+        &__items {
+            padding: 0px 100px;
+        }
+    }
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (min-width: $tablet-landscape) {
+    .benefits {
+        &__p {
+            padding: 0px 250px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .benefit {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .benefits {
+        &__p {
+            padding: 0px 250px;
+            margin-bottom: 75px;
+        }
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 75px;
+            gap: 0;
+
+            //Simulate flex-gap
+            > * + * {
+                margin-left: 20px;
+            }
+
+            .benefit {
+                margin-bottom: 0;
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+        }
+    }
+}
+
+/* DESKTOP 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .benefits {
+        &__p {
+            padding: 0px;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
